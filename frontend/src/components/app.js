@@ -1,7 +1,7 @@
 import { h } from 'preact'
 import { Router, Route } from 'preact-router'
 import Goal from './goals/Goals'
-import Event from './events/Events'
+import Target from '../targets/Target'
 import Header from './header'
 
 
@@ -13,7 +13,7 @@ const App = () => (
 		<main>
 			<Router>
 				<Home path="/" />
-				<Route path="/event" component={Event} />
+				<Route path="/target" component={Target} />
 				<Route path="/goal" component={Goal} />
 			</Router>
 		</main>

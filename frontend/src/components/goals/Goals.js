@@ -27,10 +27,9 @@ function Goal() {
       setGoal("")
       setDeadline("")
       setNotes("")
-    })
-
-    goalService.getGoals().then((updatedGoals) => {
-      setGoalList(updatedGoals)
+      goalService.getGoals().then((updatedGoals) => {
+        setGoalList(updatedGoals)
+      })
     })
   }
 
@@ -40,7 +39,6 @@ function Goal() {
         <h3>Goal: {g.goals}</h3>
         <p>Deadline: {g.deadline}</p>
         <p>Note: {g.notes}</p>
-        <button onClick={() => remove(g.goal)}>delete</button>
       </div>
     )
   })

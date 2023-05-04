@@ -14,4 +14,4 @@ const createGoal = newObject => {
 }
 
 
-export default { createGoal, getGoals, removeGoal }
+export default { createGoal, getGoals }
